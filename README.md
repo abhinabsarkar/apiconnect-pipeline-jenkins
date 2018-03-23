@@ -7,7 +7,7 @@ The steps are described below:
 1.	Developer will develop the API locally using APIC toolkit and test it. 
 2.	The yaml files are then checked-in to source control say git. 
 3.	Code commits will trigger a job in Jenkins which will use the APIC toolkit to publish the product to catalog on APIC Development environment. Note that the Jenkins Master Server delegates the job to Jenkins Slave Agent Server.
-4.	Since there is no plugin available for APIC, the APIC toolkit has to be installed on the build server (Jenkins Salve Agent server). The job will run on the build server. Jenkins pipeline will then execute the functional testing.
+4.	Since there is no plugin available for APIC, the APIC toolkit has to be installed on the build server (Jenkins Slave Agent server). The job will run on the build server. Jenkins pipeline will then execute the functional testing.
 5.	If the testing is successful, the API product will be promoted to the Test environment. The values for each environment can be set by in the API through the use of API properties. https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_set_config_properties.html
 6.	After the API is tested on the Test environment, it is promoted to the Staging environment. This promotion will be gated. The gating can be done by any change management tool like Service-Now.
 7.	The same is applicable for promotion to the Production environment.
