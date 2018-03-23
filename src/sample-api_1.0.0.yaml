@@ -1,0 +1,34 @@
+---
+swagger: "2.0"
+info:
+  x-ibm-name: "sample-api"
+  title: "sample-api"
+  version: "1.0.0"
+schemes:
+- "https"
+host: "$(catalog.host)"
+basePath: "/sample-api"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+securityDefinitions:
+  clientIdHeader:
+    type: "apiKey"
+    in: "header"
+    name: "X-IBM-Client-Id"
+security:
+- clientIdHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+    - invoke:
+        target-url: "http://abhinabsarkar-eval-test.apigee.net/github/users/mojombo"
+  phase: "realized"
+paths: {}
+definitions: {}
+tags: []
