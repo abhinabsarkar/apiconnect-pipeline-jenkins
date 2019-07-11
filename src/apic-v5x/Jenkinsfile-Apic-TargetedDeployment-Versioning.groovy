@@ -4,7 +4,8 @@ Dev, Test and Production.
 In the Dev and Test environments, the API artifacts are published to Catalog.
 In Production environments, the API artifacts are published to a Space in the Catalog.
 Publishing to Production can be integrated with Change Control if it is exposed as an API.
-In Production, Catalog's development mode is switched off. The pipeline is capable of deploying different versions of an API.
+In Production, Catalog's development mode is switched off. The pipeline is capable of deploying 
+different versions of an API.
 */
 
 //Import libraries
@@ -306,7 +307,7 @@ def ValidateCCAndDeploy(String server, String creds, String product, String cata
         String leadDeveloperID, String appdevManagerID, String appdevManagerEmail, String space = "", 
         String environment, String productName) {
     
-            //Add yout code to integrate with Change Control API, if it is applicable
+            //Add your code to integrate with Change Control API, if it is applicable
 
             //Promote the code to next envionment
             //Check if the API has to be versioned
