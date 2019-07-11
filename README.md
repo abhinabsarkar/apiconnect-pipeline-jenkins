@@ -3,7 +3,7 @@
 # What is API Connect?
 IBM® API Connect for IBM Cloud is an integrated API management offering, where all of the steps in the API lifecycle, and the actions that surround it, are performed within the offering. The steps of the API lifecycle include creating, running, managing, and securing APIs, as depicted in the following diagram.
 
-![Alt text](https://github.com/abhinabsarkar/apiconnect-pipeline-jenkins/blob/master/images/apic_capabilities.png)
+![Alt text](/images/apic_capabilities.png)
 
 More can be read about API Connect platform [here](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.overview.doc/api_management_overview.html)
 
