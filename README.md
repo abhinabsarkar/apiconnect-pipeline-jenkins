@@ -23,6 +23,8 @@ The steps are described below:
 # Jenkins Pipeline
 Jenkins Pipeline is a suite of plugins which supports implementing and integrating continuous delivery pipelines into Jenkins. Pipeline provides an extensible set of tools for modeling simple-to-complex delivery pipelines "as code". Refer https://jenkins.io/doc/book/pipeline/getting-started/ for the basics.
 
+> You need to enable the Pipeline Utility Steps Plugin in Jenkins https://wiki.jenkins.io/display/JENKINS/Pipeline+Utility+Steps+Plugin
+
 # How to create the Jenkins Pipeline
 1.	On the Jenkins Dashboard, Click the New Item menu.
 2.	Enter an item name, select pipeline project and click ok.
