@@ -27,7 +27,7 @@ prodCatalog = ""
 prodOrg = ""
 prodSpace = ""
 
-node('jenkins-slave-label') {    
+node() {    
 
     try{
         echo "Workspace: ${env.WORKSPACE}"
